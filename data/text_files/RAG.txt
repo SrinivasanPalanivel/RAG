@@ -1,0 +1,21 @@
+ Retrieval-Augmented Generation (RAG)
+Definition
+Retrieval-Augmented Generation (RAG) is an AI architecture pattern that enhances a language model’s responses by integrating external knowledge retrieval.
+It ensures that model outputs are fact-based, up-to-date, and contextually relevant, rather than relying solely on the model’s internal training data.
+
+Core Concept
+RAG combines:
+Retriever → Fetches relevant documents or data from a knowledge base (like PDFs, databases, APIs, or embeddings).
+Generator → Uses that retrieved data to produce a final, contextually enriched answer.
+
+Workflow
+User Query → "What is the refund policy of ABSA Bank?"
+Retriever → Searches a document store (e.g., vector DB like Pinecone, FAISS, Chroma) for relevant policy text.
+Context Injection → The retrieved data is appended to the prompt.
+Generator (LLM) → Produces an answer grounded in the retrieved content.
+
+Advantages
+Provides factual grounding.
+Enables domain-specific responses.
+Reduces hallucination risk.
+Allows updatable knowledge without retraining the model.

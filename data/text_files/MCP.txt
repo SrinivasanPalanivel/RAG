@@ -1,0 +1,36 @@
+ Model Context Protocol (MCP)
+Definition
+Model Context Protocol (MCP) is an open protocol introduced by OpenAI to allow Large Language Models (LLMs) to safely interact with external tools, databases, and APIs through standardized interfaces.
+It defines how an AI model can request, retrieve, or manipulate contextual information — like documents, data, or actions — without exposing sensitive systems directly.
+
+Core Idea
+MCP allows a model to fetch and use real-time context safely and dynamically.
+It’s a bridge between the model and connected data sources or services.
+
+Architecture Workflow
+The MCP server hosts tools, APIs, or data sources.
+The client model (LLM) connects to the MCP server.
+The model requests context or actions (e.g., "fetch user account info" or "search documents").
+MCP standardizes data exchange using JSON schemas and security protocols.
+
+Components
+Component	Description
+MCP Server	Provides data/tools (e.g., file system, databases, APIs).
+MCP Client	The LLM or app that consumes context from MCP.
+MCP Protocol	Defines structured JSON-based message formats for safe communication.
+
+Key Features
+Secure Access Control — Models only see what’s allowed.
+Standardized Interface — Works with any data source or tool.
+Extensible Design — Easy to add new connectors.
+Compatible with RAG — MCP can serve as the data bridge in a RAG pipeline.
+
+Use Case Example
+Use Case:
+A customer service assistant powered by GPT-5 retrieves user account details via MCP instead of embedding sensitive data in the prompt.
+
+Flow:
+LLM requests account info from the MCP server.
+MCP authenticates and fetches from CRM DB.
+Response is securely sent back to the LLM.
+LLM uses it to generate a compliant, data-grounded reply.

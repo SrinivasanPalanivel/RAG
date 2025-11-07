@@ -1,0 +1,34 @@
+
+<Organization>
+    <Employee> 
+        <firstName>Scoot</firstName>
+        <lastName>Willy</lastName>
+        <city>New York</city>
+        <role>QA Engineer</role>
+    </Employee>
+    <Employee> 
+        <firstName>John</firstName>
+        <lastName>Cena</lastName>
+        <city>California</city>
+        <role>FrontEnd Developer</role>
+    </Employee>
+    <Employee> 
+        <firstName>Joe</firstName>
+        <lastName>Root</lastName>
+        <city>Birmingham</city>
+        <role>Full Stack Developer</role>
+    </Employee>
+    <Employee> 
+        <firstName>Virat</firstName>
+        <lastName>Kohli</lastName>
+        <city>Delhi</city>
+        <role>API Tester</role>
+    </Employee>
+    <Employee> 
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <city>Randburg</city>
+        <role>Scrum Master</role>
+    </Employee>
+</Organization>
+
